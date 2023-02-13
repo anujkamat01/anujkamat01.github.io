@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BlockyAnimal3D</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <!-- <img src="drawing.jpg" alt = "my drawing" width="400" height="400" align = "right"></img> -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cylinder.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="BlockyAnimal.js"></script>
+    <script src="DogFace.js"></script>
+
+
+    <p id = "numdot"> XXX </p>
+
+    <!-- <br><br> -->
+    <!-- <button type="button" id="clearcanvas">Clear Canvas</button> -->
+
+    <!-- Camera Angles  -->
+    <br><br>
+    <label for = "cameraAngle">Camera Angle</label>
+    <input type="range" id="angleSlide" name="globalAngle" min="-90" max="90" value="5" class="slider">
+    <br><br>
+    <label for = "vertCameraAngle">Vertical Camera Angle</label>
+    <input type="range" id="angleSlideVert" name="vertGlobalAngle" min="-90" max="90" value="5" class="slider">
+
+    <!-- Angle sliders for limbs of the dog -->
+    <br><br>
+    <label for = "leftlegAngle">Move Left Legs</label>
+    <input type="range" id="leftlegs" name="leftlegangle" min="-45" max="45" value="0" class="slider">
+    <label for = "rightlegAngle">Move Right Legs</label>
+    <input type="range" id="rightlegs" name="rightlegangle" min="-30" max="30" value="0" class="slider">
+    <label for = "animation">Walk The Dog:</label>
+    <button type="button" id="animationOn">On</button>
+    <button type="button" id="animationOff">Off</button>
+    <br><br>
+    <label for = "tailAngle">Tail Angle</label>
+    <input type="range" id="tailangle" name="tailangle" min="-30" max="30" value="0" class="slider">
+    <label for = "animationBox">Wag it's Tail:</label>
+    <button type="button" id="animationBoxOn">On</button>
+    <button type="button" id="animationBoxOff">Off</button>
+  </body>
+</html>
