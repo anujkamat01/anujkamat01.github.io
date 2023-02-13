@@ -2,6 +2,8 @@
 import argparse
 import multiprocessing as mp
 import tkinter as tk
+import cgitb cgitb.enable()
+start_response('200 OK', [('Content-Type', 'text/html')])
 
 # 3rd party libs
 import numpy as np
