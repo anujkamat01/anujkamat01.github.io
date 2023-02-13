@@ -15,7 +15,7 @@ import math
 #https://stackoverflow.com/a/37737985
 def turn_worker(board, send_end, p_func):
     send_end.send(p_func(board))
-
+print "<b> Hello, World</b>"
 
 class Game:
     def __init__(self, player1, player2, time):
